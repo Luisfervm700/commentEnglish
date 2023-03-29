@@ -1,0 +1,359 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    line-height: 1.4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    color: #404040;
+    font-family: "Arial", Segoe UI, Tahoma, sans-serifl, Helvetica Neue, Helvetica;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.profile-select {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile-select > div {
+    margin: 0.5rem;
+    border-style: solid;
+    border-radius: 2rem;
+    display: flex;
+    height: 200px;
+    width: 25%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: rgba(128, 128, 128, 0.501);
+    font-family: monospace;
+    padding: 10px;
+}
+
+.btn-profile {
+    width: 50%;
+    margin-top: 5%;
+    font-family: monospace;
+}
+
+
+.img-profile {
+    width: 6rem;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: monospace;
+}
+
+h1 {
+    color: blue;
+    font-size: 80px;
+}
+
+#presentation_profile {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+}
+
+#movie_review {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-left: solid;
+    height: 100%;
+}
+
+
+#profile {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.section, 
+.hide {
+    display: none;
+}
+
+/* .section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+} */
+
+.show-commment {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section img {
+    width: 100%;
+}
+
+.main-comment-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    padding: 18px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+}
+
+.section a {
+    text-decoration: none;
+}
+
+.main-comment-container .avatar,
+.posted-parent-comment-container .commit .avatar {
+    display: flex;
+    width: 65px;
+    height: 65px;
+    background-color: #F4F4F4;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.btn-send {
+    display: inline-block;
+    border: 0;
+    background-color: #374D71;
+    padding: 7px 15px;
+    margin-right: .5rem;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color ease-in 200ms;
+}
+
+.btn-send:hover {
+    background-color: #4C6FA7;
+}
+
+
+.btn-return {
+    border: 0;
+    background-color: rebeccapurple;
+    padding: 7px 15px;
+    margin-right: .5rem;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color ease-in 200ms;
+    width: 100px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.btn-return:hover {
+    background-color: #4C6FA7;
+}
+
+.main-comment-container .main-comment-container-form {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin-left: .5rem;
+}
+
+.main-comment-container .main-comment-container-form .main-comment-container-textarea {
+    border: 0;
+    background-color: #F0F0F0;
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: .5rem;
+    padding: 12px 15px;
+}
+
+.create-commit .user-comment .avatar{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    background-color: #F4F4F4;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.create-commit {
+    margin-left: 50px;
+}
+
+.create-commit input[type="text"] {
+    border: 0;
+    background-color: #E1E1E1;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 8px 10px;
+    font-size: .9rem;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.btn-comment-container {
+    display: block;
+}
+
+.btn-comment-container button,
+.posted-parent-comment-container button {
+    display: inline-block;
+    border: 0;
+    padding: 3px 8px;
+    font-size: .8rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-comment-container button:hover {
+    background-color: #D5D8E1;
+}
+
+.create-commit .avatar {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-comment {
+    margin-left: 10px;;
+}
+
+.posted-parent-comment-container .commit .commit-characteristics {
+    margin-left: 1rem;
+}
+
+.comment{
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    align-items: center;
+}
+
+.posted-parent-comment-container {
+    width: 100%;
+    display: block;
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+
+.posted-parent-comment-container .create-commit,
+.posted-parent-comment-container .commit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: .5rem;
+    position: relative;
+}
+
+.posted-parent-comment-container p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9em;
+}
+
+.posted-parent-comment-container .commit-characteristics ul {
+    list-style: none;
+    font-size: 0.8em;
+    color: #909090;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 25px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}

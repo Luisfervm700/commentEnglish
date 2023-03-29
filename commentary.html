@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment System for Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <main id="main">
+        <h1>Review ME</h1>
+        <br />
+        <div class="profile-select">
+            <div>
+                <h2 id="name1">Andres E. Restrepo</h2>
+                <img id="profile1" src="img/andresr.jpg" alt="" class="img-profile">
+                <button id="btnViewProfile1" class="btn-profile" onclick="hideProfile(this)">Enter</button>
+            </div>
+            <div >
+                <h2 id="name2">Luis F. Velasquez</h2>
+                <img id="profile2" src="img/luis.jpg" alt="" class="img-profile">
+                <button id="btnViewProfile2" class="btn-profile" onclick="hideProfile(this)">Enter</button>
+            </div>
+            <div >
+                <h2 id="name3">Santiago Valencia</h2>
+                <img id="profile3" src="img/santiago.png" alt="" class="img-profile">
+                <button id="btnViewProfile3" class="btn-profile" onclick="hideProfile(this)">Enter</button>
+            </div>
+            <div >
+                <input type="text" id="guest" name="name" minlength="4" maxlength="15" size="10" placeholder="Enter name">
+                <br />
+                <img id="profile4" src="img/guest.png" alt="" class="img-profile">
+                <button id="btnViewProfile4" class="btn-profile" onclick="hideProfile(this)">Enter</button>
+            </div>
+        </div>
+
+        <section class="section">
+            <button class="btn-return">Retornar</button>
+            <br />
+            <div class="main-comment-container">
+                <div class="avatar">
+                    <img id="main-image" src="" alt="Andres Restrepo" title="Andres Restrepo">
+                </div>
+                <div class="main-comment-container-form">
+                    <textarea id="main-textarea" name="" class="main-comment-container-textarea"
+                        placeholder="Área de comentario principal"></textarea>
+                    <button id="main-comment-container-btnsend" class="btn-send">
+                        Comentar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <button onclick="topFunction()" id="toTop" class="hide" title="Go to top">Top</button>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        AR producciones
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>ABOUT THIS PRODUCT...</h2>
+                <p>Work presented in the subject of English.</p>
+            </div>
+            <div class="box">
+                <h2>FOLLOW US</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>2503680 Sena Regional Quindío</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <script src="./comment.js"></script>
+</body>
+
+</html>
